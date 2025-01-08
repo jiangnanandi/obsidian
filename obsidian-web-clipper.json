@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "0.1.0",
+  "name": "Default",
+  "behavior": "create",
+  "noteContentFormat": ">[!抽象笔记法]\n> 记下事实 -> 抽象思考 -> 转化应用\n\n---\n### 事实\n> 提炼出原文的重点，以大纲的方式，提炼关键字，并围绕关键字进行发散\n\n\n### 总结\n> 提炼的精华,包含引入瞩目的标题 \n\n\n---\n### 抽象思考\n> 对总结、重点摘要进行深度思考：[[What How Why]]，写出对这段内容的理解或评论\n  \n\n### 转化应用\n> 写下抽象思考后「得出的道理和影响」，以及思考后产出的「行动」\n\n---\n# 原文(摘要)\n\n{{content}}",
+  "properties": [
+    {
+      "name": "title",
+      "value": "{{title}}",
+      "type": "text"
+    },
+    {
+      "name": "source",
+      "value": "{{url}}",
+      "type": "text"
+    },
+    {
+      "name": "author",
+      "value": "{{author|split:\\\", \\\"|wikilink|join}}",
+      "type": "multitext"
+    },
+    {
+      "name": "published",
+      "value": "{{published}}",
+      "type": "date"
+    },
+    {
+      "name": "created",
+      "value": "{{date}}",
+      "type": "date"
+    },
+    {
+      "name": "description",
+      "value": "{{description}}",
+      "type": "text"
+    },
+    {
+      "name": "tags",
+      "value": "clippings",
+      "type": "multitext"
+    }
+  ],
+  "triggers": [],
+  "noteNameFormat": "{{title}}",
+  "path": "Clippings"
+}
